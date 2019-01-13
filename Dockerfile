@@ -1,5 +1,5 @@
 #
-# Dockerfile for kcptun
+# Dockerfile for frp
 #
 
 FROM alpine
