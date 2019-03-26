@@ -26,8 +26,10 @@ RUN set -ex \
  && cd / \
  && rm -rf /tmp/repo \
  && rm -rf $(go env GOPATH) \
+ && rm -rf $(go env GOCACHE) \
  && go clean \
- && apk del .build-deps
+ && apk del .build-deps \
+ && rm -rf /var/cache/apk/*
 
 USER root
 
